@@ -76,17 +76,20 @@ void telaFinal(int pontuacao, char nome[50]){
 	}
 	barraDeCarregamento(5);
 	printf("\n\n");
+	printf("\t\t\t\t\t");
+	printf("%d PONTOS!!!\n\n", pontuacao);
 	if(pontuacao >= 3){
-		printf("\t\t\t\t"); printf("Você Acertou mais da metade das Questões! \n");
-		printf("\t\t\t\t"); printf("Meus parabéns pelos seus acertos! Mas agora \n");
+		printf("\t\t\t\t"); printf("Você acertou mais da metade das questões! \n\n");
+		printf("\t\t\t\t"); printf("Parabéns pelos acertos! Apesar do tempo curto você conseguiu. \n\n");
+	} else if (pontuacao == 0) {
+		printf("\t\t\t\t"); printf("Você está exatamente na média. A quantidade de erros foi igual a de acertos. \n\n");
+		printf("\t\t\t\t"); printf("Isso é bom, só melhora mais um pouco blz? \n\n");
 	} else {	
-		printf("\t\t\t\t"); printf("Éééééééé... Não foi umas das melhores notas \n");
-		printf("\t\t\t\t"); printf("Mas não fique triste, não é uma nota que te define \n");
-		printf("\t\t\t\t"); printf("Mas agora \n");
+		printf("\t\t\t\t"); printf("Éééééééé... Não foi umas das melhores notas... \n\n");
+		printf("\t\t\t\t"); printf("Mas não fique triste, não é uma nota que define quem você é :) \n\n");
 	}
-	
-	printf("\t\t\t\t"); printf("Preciso despedi. Isso foi por hoje pessoal!\n");
-	printf("\n\n\n\n\n\n\n\n\n\n\n");
+	printf("\t\t\t\t"); printf("O quiz chegou ao fim, obrigada por jogar!\n");
+	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n");
 	printf("\t\t\t\t    "); printf("Créditos: Ana Carolina Marques Freitas Santows! \n");
 }
 
@@ -175,7 +178,7 @@ int perguntar(char enunciado[200], char a[100], char b[100], char c[100], char d
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
-    int pontuacao = 0;
+    int pontuacao = 0, erros = 0, acertos = 0;
     char nome[50];
     
 	printf("\n\n\n\n\n\n\n\n\n\n\n");
