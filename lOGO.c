@@ -5,30 +5,18 @@
 #define T 500
 
 void logo(){
-	system("color 6");
-	printf("\n\n\n\n\t\t%c-----------------%c\n",201,187);
-	Sleep(T);
-	system("cls");
-	printf("\n\n\n\n\t\t%c-----------------%c\n",201,187);
-	printf("\t\t|                 |\n");
-	Sleep(T);
-	system("cls");
-	printf("\n\n\n\n\t\t%c-----------------%c\n",201,187);
-	printf("\t\t|                 |\n");	
-	printf("\t\t|   Lusia's Quiz  |\n");
-	Sleep(T);
-	system("cls");
-	printf("\n\n\n\n\t\t%c-----------------%c\n",201,187);
-	printf("\t\t|                 |\n");	
-	printf("\t\t|   Lusia's Quiz  |\n");	
-	printf("\t\t|                 |\n");
-	Sleep(T);
-	system("cls");
-	printf("\n\n\n\n\t\t%c-----------------%c\n",201,187);
-	printf("\t\t|                 |\n");	
-	printf("\t\t|   Lusia's Quiz  |\n");	
-	printf("\t\t|                 |\n");	
-	printf("\t\t%c-----------------%c\n",200,188);
+	printf("  ####     ##    #    #  #####   ####   #    #   ####        ####   #    #  #  ###### \n");
+	Sleep(500);
+	printf(" #        #  #   ##   #    #    #    #  #    #  #           #    #  #    #  #      #  \n");
+	Sleep(500);
+	printf("  ####   #    #  # #  #    #    #    #  #    #   ####       #    #  #    #  #     #   \n");
+	Sleep(500);
+	printf("      #  ######  #  # #    #    #    #  # ## #       #      #  # #  #    #  #    #    \n");
+	Sleep(500);
+	printf(" #    #  #    #  #   ##    #    #    #  ##  ##  #    #      #   #   #    #  #   #     \n");
+	Sleep(500);
+	printf("  ####   #    #  #    #    #     ####   #    #   ####        ### #   ####   #  ###### \n");
+	Sleep(500);
 }
 
 int main () {

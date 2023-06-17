@@ -30,6 +30,23 @@ void piscarTela(short certoErrado) {
             system("color D7");
             Sleep(100);
             system("color 07");
+            piscadas+=5;
+        }
+	} else if (certoErrado == 3) {
+		while (piscadas < totalPiscadas) {
+            system("color 04");
+            Sleep(100);
+            system("color 0C");
+            Sleep(100);
+            system("color 06");
+            Sleep(100);
+            system("color 02");
+            Sleep(100);
+            system("color 01");
+            Sleep(100);
+            system("color 0D");
+            Sleep(100);
+            system("color 07");
             piscadas+=4;
         }
 	} else {
@@ -59,6 +76,24 @@ void barraDeCarregamento(int altura) {
         Sleep(100);
     }
     textbackground(0);
+    system("cls");
+}
+
+void logo(){
+	printf("\n\n\n\n\n\n\n\n\n\n");
+	printf("\t\t  ####     ##    #    #  #####   ####   #    #   ####        ####   #    #  #  ###### \n");
+	Sleep(500);
+	printf("\t\t #        #  #   ##   #    #    #    #  #    #  #           #    #  #    #  #      #  \n");
+	Sleep(500);
+	printf("\t\t  ####   #    #  # #  #    #    #    #  #    #   ####       #    #  #    #  #     #   \n");
+	Sleep(500);
+	printf("\t\t      #  ######  #  # #    #    #    #  # ## #       #      #  # #  #    #  #    #    \n");
+	Sleep(500);
+	printf("\t\t #    #  #    #  #   ##    #    #    #  ##  ##  #    #      #   #   #    #  #   #     \n");
+	Sleep(500);
+	printf("\t\t  ####   #    #  #    #    #     ####   #    #   ####        ### #   ####   #  ###### \n");
+	Sleep(500);
+	piscarTela(3);
     system("cls");
 }
 
@@ -179,8 +214,9 @@ int main() {
     int pontuacao = 0, erros = 0, acertos = 0;
     char nome[50];
     
+    logo();
 	printf("\n\n\n\n\n\n\n\n\n\n\n");
-	printf("\t\t\t\t    "); printf("Seja bem vindo(a) ao Ana's Quiz!!!!!!!! \n\n");
+	printf("\t\t\t\t    "); printf("Seja bem vindo(a) ao Santows Quiz!!!!!!!! \n\n");
 	printf("\t\t\t\t    "); printf("Primeramente, qual o seu nome? ");
 	gets(nome);
 	system("cls");
