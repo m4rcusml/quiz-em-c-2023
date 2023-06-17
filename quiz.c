@@ -62,22 +62,20 @@ void barraDeCarregamento(int altura) {
     system("cls");
 }
 
-void telaInformacoes() {
-	
-}
-
 void telaFinal(int pontuacao, char nome[50]){
 	int i = 0;
+	printf("\n\n\t\t\t\t");
+	printf("%s!\n\n", nome);
 	printf("\t\t\t\t");
 	printf("Você chegou ao fim do quiz, sua pontuação final foi");
 	for(i = 0; i < 3; i++) {
 		Sleep(500);
 		printf(". ");
 	}
-	barraDeCarregamento(5);
+	barraDeCarregamento(10);
 	printf("\n\n");
-	printf("\t\t\t\t\t");
-	printf("%d PONTOS!!!\n\n", pontuacao);
+	printf("\t\t\t\t\t\t");
+	printf("  %d PONTOS!!!\n\n", pontuacao);
 	if(pontuacao >= 3){
 		printf("\t\t\t\t"); printf("Você acertou mais da metade das questões! \n\n");
 		printf("\t\t\t\t"); printf("Parabéns pelos acertos! Apesar do tempo curto você conseguiu. \n\n");
@@ -90,7 +88,7 @@ void telaFinal(int pontuacao, char nome[50]){
 	}
 	printf("\t\t\t\t"); printf("O quiz chegou ao fim, obrigada por jogar!\n");
 	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n");
-	printf("\t\t\t\t    "); printf("Créditos: Ana Carolina Marques Freitas Santows! \n");
+	printf("\t\t\t\t    "); printf("Créditos: Ana Carolina Marques Freitas Santows! \n\n\n");
 }
 
 void mostrarQuestao(char enunciado[200], char a[100], char b[100], char c[100], char d[100], char e[100], int tempo) {
@@ -184,10 +182,8 @@ int main() {
 	printf("\n\n\n\n\n\n\n\n\n\n\n");
 	printf("\t\t\t\t    "); printf("Seja bem vindo(a) ao Ana's Quiz!!!!!!!! \n\n");
 	printf("\t\t\t\t    "); printf("Primeramente, qual o seu nome? ");
-	
 	gets(nome);
 	system("cls");
-	
 	printf("\n\n\n\n\n\n\n\n\n\n");
 	printf("\t\t\t\t"); printf("Olá, %s!\n\n", nome);
 	printf("\t\t\t\t"); printf("Você está prestes a começar um dos quizes de matemática 2023!\n\n");
